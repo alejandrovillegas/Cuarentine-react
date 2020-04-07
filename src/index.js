@@ -1,5 +1,4 @@
-import React from "react";
-import ReactDom from "react-dom";
+import React from 'react'
+import ReactDom from 'react-dom'
 
-ReactDom.render("Alejo Chevere", document.body);
-console.log("y aja!");
+ReactDom.render(<h1>"Alejo Chevere</h1>, document.getElementById('app'))
