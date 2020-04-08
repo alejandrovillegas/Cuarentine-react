@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "lint": "standard",
+    "lint-fix": "standard --fix",
     "dev": "webpack-dev-server",
     "now-build": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -35,14 +36,17 @@
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0"
   },
   "standard": {
     "ignore": [
-        "/api/**"
+      "/api/**"
     ]
   },
   "eslintConfig": {
-      "extends": ["./node_modules/standard/eslintrc.json"]
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }
