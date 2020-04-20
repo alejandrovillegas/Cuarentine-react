@@ -35,6 +35,8 @@
     "wepack-cli": "0.0.1-security"
   },
   "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "intersection-observer": "^0.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.9.0",
