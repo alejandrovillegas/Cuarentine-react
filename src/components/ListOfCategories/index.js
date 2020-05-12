@@ -9,10 +9,13 @@ function useCategoriesData() {
 
 	useEffect(function() {
 		setLoading(true);
-		window.fetch('https://petgram-lincol.now.sh/categories').then((res) => res.json()).then((response) => {
-			setCategories(response);
-			setLoading(false);
-		});
+		window
+			.fetch('https://petgram-server-jcamacaro.camacaro.now.sh/categories')
+			.then((res) => res.json())
+			.then((response) => {
+				setCategories(response);
+				setLoading(false);
+			});
 	}, []);
 
 	return { categories, loading };
