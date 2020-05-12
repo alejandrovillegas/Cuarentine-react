@@ -9,7 +9,8 @@
     "lint-fix": "standard --fix",
     "dev": "webpack-dev-server --history-api-fallback",
     "now-build": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve:dev": "webpack --mode 'development' && npx serve dist -s"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,7 @@
     "react": "^16.13.1",
     "react-apollo": "^3.1.5",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
     "react-icons": "^3.9.0",
     "styled-components": "^5.1.0"
   },
